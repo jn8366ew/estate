@@ -1,0 +1,11 @@
+** User Migrations
+1. execute python manage.py makemigrations
+2. After setting DB routers up completely, use
+3. py.manage.py migrate [model_name] --database=[database_name in settings.py]
+4. py.manage.py migrate --database=[database_name in settings.py] (For applying sessions)
+ex) py manage.py migrate user --database=users
+ex) py manage.py migrate listing --database=listings
+
+
+** Create Superuser
+1. py manage.py createsuperuser --database=[database_name in settings.py]
